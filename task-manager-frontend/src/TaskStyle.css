@@ -1,0 +1,208 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Headings */
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Fix table layout to ensure columns don't resize */
+table.task-table {
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+
+/* Set Specific Column Widths */
+table.task-table th:nth-child(1),
+table.task-table td:nth-child(1) {
+    width: 20%;  /* Adjust for Title */
+}
+
+table.task-table th:nth-child(2),
+table.task-table td:nth-child(2) {
+    width: 40%;  /* Increased width for Description */
+
+}
+
+table.task-table th:nth-child(3),
+table.task-table td:nth-child(3) {
+    width: 15%;  /* Decreased width for Completed */
+}
+
+table.task-table th:nth-child(4),
+table.task-table td:nth-child(4) {
+    width: 25%;  /* Adjust for Action Buttons */
+}
+/* Flexbox for actions */
+table .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Table Row Hover Effect */
+tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: 0.3s;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+input:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons */
+button, .btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* Button Colors */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    width:20%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+.btn-secondary {
+  background-color: gray;
+  color: white;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+    text-decoration: none;
+}
+
+/* Button Hover Effects */
+button:hover, .btn:hover {
+    opacity: 0.8;
+}
+
+/* Spacing for Buttons in Table */
+td .btn {
+    margin: 3px;
+}
+
+/* Centered Form */
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin-top: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
